@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5175DB7A7C3F0053184A049B /* Pods_ShopkeeperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 782926F8243F280A3BD86F57 /* Pods_ShopkeeperTests.framework */; };
 		80E8652724A225530059C076 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8652624A225530059C076 /* AppDelegate.swift */; };
 		80E8652924A225530059C076 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8652824A225530059C076 /* SceneDelegate.swift */; };
 		80E8652B24A225530059C076 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8652A24A225530059C076 /* ViewController.swift */; };
@@ -15,6 +16,7 @@
 		80E8653324A225550059C076 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80E8653224A225550059C076 /* Assets.xcassets */; };
 		80E8653624A225550059C076 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80E8653424A225550059C076 /* LaunchScreen.storyboard */; };
 		80E8654124A225560059C076 /* ShopkeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8654024A225560059C076 /* ShopkeeperTests.swift */; };
+		C7F1BE628D7609FBD14A460F /* Pods_Shopkeeper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 693C6BE6830E07572D6F47D4 /* Pods_Shopkeeper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		054421B6DD64CC4816BDE655 /* Pods-Shopkeeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shopkeeper.release.xcconfig"; path = "Target Support Files/Pods-Shopkeeper/Pods-Shopkeeper.release.xcconfig"; sourceTree = "<group>"; };
+		68E15CAC030318B0692D426A /* Pods-Shopkeeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shopkeeper.debug.xcconfig"; path = "Target Support Files/Pods-Shopkeeper/Pods-Shopkeeper.debug.xcconfig"; sourceTree = "<group>"; };
+		693C6BE6830E07572D6F47D4 /* Pods_Shopkeeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shopkeeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		782926F8243F280A3BD86F57 /* Pods_ShopkeeperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShopkeeperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E8652324A225530059C076 /* Shopkeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shopkeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E8652624A225530059C076 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80E8652824A225530059C076 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +46,8 @@
 		80E8653C24A225560059C076 /* ShopkeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopkeeperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E8654024A225560059C076 /* ShopkeeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopkeeperTests.swift; sourceTree = "<group>"; };
 		80E8654224A225560059C076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC4D2F77F9F797BEC17AF2B2 /* Pods-ShopkeeperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopkeeperTests.release.xcconfig"; path = "Target Support Files/Pods-ShopkeeperTests/Pods-ShopkeeperTests.release.xcconfig"; sourceTree = "<group>"; };
+		DB5DD612D37EA68D2E1810A0 /* Pods-ShopkeeperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopkeeperTests.debug.xcconfig"; path = "Target Support Files/Pods-ShopkeeperTests/Pods-ShopkeeperTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F1BE628D7609FBD14A460F /* Pods_Shopkeeper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +63,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5175DB7A7C3F0053184A049B /* Pods_ShopkeeperTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2ADA89D1EA8BC7918BB3FBCB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68E15CAC030318B0692D426A /* Pods-Shopkeeper.debug.xcconfig */,
+				054421B6DD64CC4816BDE655 /* Pods-Shopkeeper.release.xcconfig */,
+				DB5DD612D37EA68D2E1810A0 /* Pods-ShopkeeperTests.debug.xcconfig */,
+				AC4D2F77F9F797BEC17AF2B2 /* Pods-ShopkeeperTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		80E8651A24A225530059C076 = {
 			isa = PBXGroup;
 			children = (
 				80E8652524A225530059C076 /* Shopkeeper */,
 				80E8653F24A225560059C076 /* ShopkeeperTests */,
 				80E8652424A225530059C076 /* Products */,
+				2ADA89D1EA8BC7918BB3FBCB /* Pods */,
+				F6FAEE1643097956AFA31AC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +126,15 @@
 			path = ShopkeeperTests;
 			sourceTree = "<group>";
 		};
+		F6FAEE1643097956AFA31AC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				693C6BE6830E07572D6F47D4 /* Pods_Shopkeeper.framework */,
+				782926F8243F280A3BD86F57 /* Pods_ShopkeeperTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,6 +142,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80E8654524A225560059C076 /* Build configuration list for PBXNativeTarget "Shopkeeper" */;
 			buildPhases = (
+				B722AA37AFBA401F8592B118 /* [CP] Check Pods Manifest.lock */,
 				80E8651F24A225530059C076 /* Sources */,
 				80E8652024A225530059C076 /* Frameworks */,
 				80E8652124A225530059C076 /* Resources */,
@@ -126,6 +160,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80E8654824A225560059C076 /* Build configuration list for PBXNativeTarget "ShopkeeperTests" */;
 			buildPhases = (
+				60E10F5A4295690EF045CD49 /* [CP] Check Pods Manifest.lock */,
 				80E8653824A225560059C076 /* Sources */,
 				80E8653924A225560059C076 /* Frameworks */,
 				80E8653A24A225560059C076 /* Resources */,
@@ -197,6 +232,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60E10F5A4295690EF045CD49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShopkeeperTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B722AA37AFBA401F8592B118 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shopkeeper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		80E8651F24A225530059C076 /* Sources */ = {
@@ -364,6 +446,7 @@
 		};
 		80E8654624A225560059C076 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68E15CAC030318B0692D426A /* Pods-Shopkeeper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -381,6 +464,7 @@
 		};
 		80E8654724A225560059C076 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 054421B6DD64CC4816BDE655 /* Pods-Shopkeeper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -398,6 +482,7 @@
 		};
 		80E8654924A225560059C076 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB5DD612D37EA68D2E1810A0 /* Pods-ShopkeeperTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -419,6 +504,7 @@
 		};
 		80E8654A24A225560059C076 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC4D2F77F9F797BEC17AF2B2 /* Pods-ShopkeeperTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
