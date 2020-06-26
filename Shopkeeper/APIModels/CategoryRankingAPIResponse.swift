@@ -74,4 +74,15 @@ struct RankingProductAPIModel: Codable {
     }
 }
 
+extension RankingProductAPIModel {
+    func addProductToRanking(products: [Product]) -> Product? {
+        let product = products.first{$0.id == Int16(self.id ?? 0)}
+        product?.viewsCount = product?.viewsCount != 0 ? (product?.viewsCount ?? 0) : Int64(self.viewCount ?? 0)
+        product?.shareCount = product?.shareCount != 0 ? (product?.shareCount ?? 0) : Int64(self.shares ?? 0)
+        product?.ordersCount = product?.ordersCount != 0 ? (product?.ordersCount ?? 0) : Int64(self.orderCount ?? 0)
+        return product
+    }
+}
+
+
 
