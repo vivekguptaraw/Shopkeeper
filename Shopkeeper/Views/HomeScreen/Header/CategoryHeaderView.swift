@@ -2,7 +2,7 @@
 //  CategoryHeaderView.swift
 //  Heady-Mart
 //
-//  Created by Vivek Gupta on 18/05/20.
+//  Created by Vivek Gupta on 27/06/20.
 //  Copyright © 2020 Vivek Gupta. All rights reserved.
 //
 
@@ -30,19 +30,20 @@ class CategoryHeaderView: UIView, NibLoadableProtocol {
         collectionView.register(CategoryCollectionViewCell.defaultNib, forCellWithReuseIdentifier: CategoryCollectionViewCell.defaultNibName)
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
-        
-        if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-            let w = UIScreen.main.bounds.width * 0.4
-            layout.itemSize = CGSize(width: w, height: self.collectionView.frame.height - 10)
-            layout.scrollDirection = .horizontal
-            layout.minimumInteritemSpacing = 10
-            layout.invalidateLayout()
-        }
+        self.collectionView.backgroundColor = .clear
+        self.backgroundColor = .clear
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        
+        if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            let w = (collectionView.bounds.width / 2) - (10 * 2)
+            layout.itemSize = CGSize(width: w, height: self.collectionView.frame.height > 60 ? 60 : self.collectionView.frame.height - 10)
+            layout.scrollDirection = .horizontal
+            layout.minimumLineSpacing = 10
+            layout.invalidateLayout()
+            layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+        }
     }
 }
 
@@ -70,6 +71,4 @@ extension CategoryHeaderView: UICollectionViewDataSource, UICollectionViewDelega
         }
         
     }
-    
-    
 }

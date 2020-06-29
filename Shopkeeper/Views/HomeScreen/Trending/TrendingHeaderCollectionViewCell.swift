@@ -2,7 +2,7 @@
 //  TrendingHeaderCollectionViewCell.swift
 //  Heady-Mart
 //
-//  Created by Vivek Gupta on 21/05/20.
+//  Created by Vivek Gupta on 28/06/20.
 //  Copyright © 2020 Vivek Gupta. All rights reserved.
 //
 
@@ -16,10 +16,15 @@ class TrendingHeaderCollectionViewCell: UICollectionViewCell, ConfigurableCell {
         super.awakeFromNib()
         // Initialization code
         self.alpha = 0.8
+        self.label.layer.cornerRadius = self.label.bounds.height / 2
     }
     
     func configure(_ item: String, at indexPath: IndexPath) {
         label.text = item
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
     }
 
 }

@@ -11,39 +11,28 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Heady_Mart" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Shopkeeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jcM-wg-tmd">
-                                <rect key="frame" x="0.0" y="88" width="414" height="140"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VYX-dH-fU2">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="140" id="S2O-S1-wHX"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dfh-hy-klS">
-                                <rect key="frame" x="0.0" y="238" width="414" height="624"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Dfh-hy-klS" secondAttribute="bottom" id="GJA-l7-epV"/>
-                            <constraint firstItem="jcM-wg-tmd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QUX-5P-BkT"/>
-                            <constraint firstItem="jcM-wg-tmd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SGe-7i-TOm"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dfh-hy-klS" secondAttribute="trailing" id="k6Y-lR-3z1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jcM-wg-tmd" secondAttribute="trailing" id="kXn-q0-b4X"/>
-                            <constraint firstItem="Dfh-hy-klS" firstAttribute="top" secondItem="jcM-wg-tmd" secondAttribute="bottom" constant="10" id="vfB-pN-8y3"/>
-                            <constraint firstItem="Dfh-hy-klS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="y2U-Sg-fbY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VYX-dH-fU2" secondAttribute="bottom" id="7Kc-rb-hpN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VYX-dH-fU2" secondAttribute="trailing" id="Nsy-zW-5WT"/>
+                            <constraint firstItem="VYX-dH-fU2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pmk-cw-COh"/>
+                            <constraint firstItem="VYX-dH-fU2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="w2d-DE-BgV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="yfJ-Bh-b86"/>
                     <connections>
-                        <outlet property="bottomView" destination="Dfh-hy-klS" id="DpO-ZO-r8V"/>
-                        <outlet property="topView" destination="jcM-wg-tmd" id="gzZ-Sc-dvz"/>
+                        <outlet property="tableView" destination="VYX-dH-fU2" id="N0g-Z7-sik"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -53,25 +42,27 @@
         <!--Catgory View Controller-->
         <scene sceneID="eTc-P7-Ee9">
             <objects>
-                <viewController storyboardIdentifier="CatgoryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KLR-eo-vpf" customClass="CatgoryViewController" customModule="Heady_Mart" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CatgoryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KLR-eo-vpf" customClass="CatgoryViewController" customModule="Shopkeeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SCc-Cd-AMi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HqW-3W-84X">
-                                <rect key="frame" x="0.0" y="44" width="414" height="120"/>
+                                <rect key="frame" x="0.0" y="54" width="414" height="120"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropdown" translatesAutoresizingMaskIntoConstraints="NO" id="N0R-3b-o5e">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropdown" translatesAutoresizingMaskIntoConstraints="NO" id="N0R-3b-o5e">
                                         <rect key="frame" x="10" y="10" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="vrG-kJ-TKO"/>
                                             <constraint firstAttribute="width" constant="20" id="xCb-0U-oop"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zw5-my-x4k">
+                                    <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zw5-my-x4k">
                                         <rect key="frame" x="32" y="-6" width="72" height="52"/>
                                         <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="0.089204848160000003" green="0.19917368420000001" blue="0.24901128759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="leafSelectionClicked:" destination="KLR-eo-vpf" eventType="touchUpInside" id="DA1-6S-EoK"/>
                                         </connections>
@@ -111,7 +102,7 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="h0M-fT-XQC">
-                                <rect key="frame" x="0.0" y="174" width="414" height="608"/>
+                                <rect key="frame" x="0.0" y="184" width="414" height="598"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RE1-Mw-gBo">
                                     <size key="itemSize" width="50" height="50"/>
@@ -164,7 +155,7 @@
                             <constraint firstItem="h32-oa-fFY" firstAttribute="trailing" secondItem="JkL-fu-qyq" secondAttribute="trailing" id="khX-Ib-Q3U"/>
                             <constraint firstItem="JkL-fu-qyq" firstAttribute="leading" secondItem="h32-oa-fFY" secondAttribute="leading" id="nn4-yb-yHb"/>
                             <constraint firstItem="h0M-fT-XQC" firstAttribute="top" secondItem="HqW-3W-84X" secondAttribute="bottom" constant="10" id="qbt-n9-c3y"/>
-                            <constraint firstItem="HqW-3W-84X" firstAttribute="top" secondItem="h32-oa-fFY" secondAttribute="top" id="rkV-gy-1he"/>
+                            <constraint firstItem="HqW-3W-84X" firstAttribute="top" secondItem="h32-oa-fFY" secondAttribute="top" constant="10" id="rkV-gy-1he"/>
                             <constraint firstItem="JkL-fu-qyq" firstAttribute="top" secondItem="h0M-fT-XQC" secondAttribute="bottom" id="s8c-kR-T1P"/>
                             <constraint firstItem="JkL-fu-qyq" firstAttribute="leading" secondItem="h32-oa-fFY" secondAttribute="leading" id="ucZ-rk-ZqH"/>
                             <constraint firstItem="h32-oa-fFY" firstAttribute="trailing" secondItem="h0M-fT-XQC" secondAttribute="trailing" id="wgD-Yy-ROQ"/>
@@ -175,6 +166,7 @@
                         <outlet property="childCategoryCollection" destination="gw7-y5-g65" id="2LK-YA-25O"/>
                         <outlet property="childHeightConstraint" destination="vgi-DT-gfC" id="HjE-eM-r5v"/>
                         <outlet property="childsParentUIVIew" destination="HqW-3W-84X" id="jm0-r4-Sg8"/>
+                        <outlet property="dropDownImage" destination="N0R-3b-o5e" id="Xmk-TL-8EG"/>
                         <outlet property="leafProductsCollectionView" destination="h0M-fT-XQC" id="oeP-Dz-vMf"/>
                         <outlet property="leafSelectionButton" destination="zw5-my-x4k" id="XDi-Xh-krt"/>
                         <outlet property="parentCollectionHeight" destination="wsC-bR-Tj6" id="kiM-lD-aEE"/>
@@ -188,7 +180,7 @@
         <!--Product View Controller-->
         <scene sceneID="FDh-iU-BnL">
             <objects>
-                <viewController storyboardIdentifier="ProductViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8q7-pc-MB0" customClass="ProductViewController" customModule="Heady_Mart" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProductViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8q7-pc-MB0" customClass="ProductViewController" customModule="Shopkeeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bv0-ZP-3id">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -199,7 +191,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="Htp-bv-anV"/>
                                 </constraints>
-                                <collectionViewLayout key="collectionViewLayout" id="u8j-3H-ubR" customClass="CarouselLayout" customModule="Heady_Mart" customModuleProvider="target"/>
+                                <collectionViewLayout key="collectionViewLayout" id="u8j-3H-ubR" customClass="CarouselLayout" customModule="Shopkeeper" customModuleProvider="target"/>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jzZ-dD-4fx">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -216,8 +208,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="W19-Ho-y9I"/>
                                 </constraints>
-                                <color key="pageIndicatorTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.54304901541095896" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="currentPageIndicatorTintColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" red="0.089204848160000003" green="0.19917368420000001" blue="0.24901128759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </pageControl>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="4T8-XZ-g62">
                                 <rect key="frame" x="0.0" y="298" width="414" height="216"/>
@@ -291,6 +283,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="dropdown" width="256" height="256"/>
+        <image name="dropdown" width="170.66667175292969" height="170.66667175292969"/>
     </resources>
 </document>

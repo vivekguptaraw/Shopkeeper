@@ -146,7 +146,10 @@ struct CoreDataOperations {
         do {
             let ranking = try CoreDataManager.shared.mainManagedObjectContext.fetch(Ranking.fetchRequest())
             if let array = ranking as? [Ranking] {
-                return array
+                let sorted = array.sorted { (r1, r2) -> Bool in
+                    return r1.ranking ?? "" < r2.ranking ?? ""
+                }
+                return sorted
             }
         } catch {
             print("Error while fetching Ranking")

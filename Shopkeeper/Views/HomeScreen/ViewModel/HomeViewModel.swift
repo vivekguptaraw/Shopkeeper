@@ -2,7 +2,7 @@
 //  HomeViewModel.swift
 //  Heady-Mart
 //
-//  Created by Vivek Gupta on 20/05/20.
+//  Created by Vivek Gupta on 28/06/20.
 //  Copyright © 2020 Vivek Gupta. All rights reserved.
 //
 
@@ -78,4 +78,13 @@ class HomeViewModel: CategoryProductViewModel {
     }
 }
 
+extension HomeViewModel: ProductDetailProtocol {
+    func showProductDetail(nav: UINavigationController?, product: Product) {
+        if let vc = Helper.getViewControllerFromStoryboard(toStoryBoard: .Main, initialViewControllerIdentifier: ProductViewController.storyBoardID) as? ProductViewController {
+            vc.viewModel = ProductViewModel()
+            vc.viewModel?.product = product
+            nav?.pushViewController(vc, animated: true)
+        }
+    }
+}
 

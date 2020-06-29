@@ -2,7 +2,7 @@
 //  HomeNavigatorProtocol.swift
 //  Heady-Mart
 //
-//  Created by Vivek Gupta on 22/05/20.
+//  Created by Vivek Gupta on 29/06/20.
 //  Copyright © 2020 Vivek Gupta. All rights reserved.
 //
 
@@ -22,7 +22,11 @@ class HomeNavigator: HomeNavigatorProtocol {
     }
     
     func showCategoryScreen(category: Category) {
-        
+        if let categoryVC = Helper.getViewControllerFromStoryboard(toStoryBoard: .Main, initialViewControllerIdentifier: CatgoryViewController.storyBoardID) as? CatgoryViewController {
+            categoryVC.viewModel = CategoryViewModel()
+            categoryVC.viewModel?.category = category
+            self.navigator?.pushViewController(categoryVC, animated: true)
+        }
     }
     
 }
