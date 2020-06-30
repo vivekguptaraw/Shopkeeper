@@ -11,9 +11,9 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    
     var trendingHeaderCollectionView: UICollectionView!
     var trendingContentCollectionView: UICollectionView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     var viewModel: HomeViewModel?
     var selectedRankIndex = 0
     private var navigator: HomeNavigatorProtocol?
@@ -101,6 +101,9 @@ class HomeViewController: UIViewController {
             guard let slf = self else {return}
             slf.header.categories = slf.viewModel?.state.categories
             slf.setTrendingItems()
+            if slf.header.categories.count > 0 {
+                slf.activityIndicator.stopAnimating()
+            }
         }
     }
     
