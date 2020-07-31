@@ -22,6 +22,10 @@ platform :ios do
 
   desc "Description of what the lane does"
   lane :custom_lane do
+	cocoapods(
+		clean_install: true,
+  		podfile: "./Podfile"
+	)
     build_ios_app(
       configuration: "Debug",
       scheme: "Shopkeeper",
@@ -31,8 +35,5 @@ platform :ios do
       output_name: "shopkeeper.ipa",
     )
   end
-	cocoapods(
-		clean_install: true,
-  		podfile: "./Podfile"
-	)
+	
 end
