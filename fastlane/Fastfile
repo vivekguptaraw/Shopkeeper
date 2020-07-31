@@ -16,16 +16,12 @@
 default_platform(:ios)
 
 platform :ios do
-	before_all do
-		cocoapods
-	end
-
   desc "Description of what the lane does"
   lane :custom_lane do
-	cocoapods(
-		clean_install: true,
-  		podfile: "./Podfile"
-	)
+    cocoapods(
+      clean_install: true,
+      podfile: "./Podfile"
+    )
     build_ios_app(
       configuration: "Debug",
       scheme: "Shopkeeper",
