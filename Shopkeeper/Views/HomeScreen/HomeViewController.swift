@@ -48,6 +48,7 @@ class HomeViewController: UIViewController {
         self.setViewModel()
         self.tableView.backgroundColor = Colors.backgroundColor
         self.title = "Shoppy"
+        print("Home screen..")
         navigator = HomeNavigator(navigator: self.navigationController)
     }
     
