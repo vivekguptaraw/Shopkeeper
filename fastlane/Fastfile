@@ -16,6 +16,10 @@
 default_platform(:ios)
 
 platform :ios do
+	before_all do
+		cocoapods
+	end
+
   desc "Description of what the lane does"
   lane :custom_lane do
     build_ios_app(
@@ -27,4 +31,8 @@ platform :ios do
       output_name: "shopkeeper.ipa",
     )
   end
+	cocoapods(
+		clean_install: true,
+  		podfile: "./Podfile"
+	)
 end
